@@ -1,0 +1,11 @@
+/home/arielhs/repo/tstsolution/DllEntityLayers/bin/Debug/net8.0/DllEntityLayers.deps.json
+/home/arielhs/repo/tstsolution/DllEntityLayers/bin/Debug/net8.0/DllEntityLayers.dll
+/home/arielhs/repo/tstsolution/DllEntityLayers/bin/Debug/net8.0/DllEntityLayers.pdb
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.AssemblyInfoInputs.cache
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.AssemblyInfo.cs
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.csproj.CoreCompileInputs.cache
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.dll
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/refint/DllEntityLayers.dll
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntityLayers.pdb
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/ref/DllEntityLayers.dll

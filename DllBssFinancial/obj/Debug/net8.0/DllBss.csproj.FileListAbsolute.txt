@@ -1,0 +1,5 @@
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBss.csproj.AssemblyReference.cache
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBss.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBss.AssemblyInfoInputs.cache
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBss.AssemblyInfo.cs
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBss.csproj.CoreCompileInputs.cache

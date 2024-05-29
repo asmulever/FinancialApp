@@ -1,0 +1,17 @@
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllBssFinancial.deps.json
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllBssFinancial.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllBssFinancial.pdb
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.AssemblyInfoInputs.cache
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.AssemblyInfo.cs
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.csproj.CoreCompileInputs.cache
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/refint/DllBssFinancial.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.pdb
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/ref/DllBssFinancial.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllDalFinancial.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllEntityLayers.dll
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllEntityLayers.pdb
+/home/arielhs/repo/tstsolution/DllBssFinancial/bin/Debug/net8.0/DllDalFinancial.pdb
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.csproj.AssemblyReference.cache
+/home/arielhs/repo/tstsolution/DllBssFinancial/obj/Debug/net8.0/DllBssFinancial.csproj.CopyComplete

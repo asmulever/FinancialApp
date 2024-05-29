@@ -1,0 +1,15 @@
+/home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllDalFinancial.deps.json
+/home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllDalFinancial.dll
+/home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllDalFinancial.pdb
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.AssemblyInfoInputs.cache
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.AssemblyInfo.cs
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.csproj.CoreCompileInputs.cache
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.dll
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/refint/DllDalFinancial.dll
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.pdb
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/ref/DllDalFinancial.dll
+/home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllEntityLayers.dll
+/home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllEntityLayers.pdb
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.csproj.AssemblyReference.cache
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDalFinancial.csproj.CopyComplete
