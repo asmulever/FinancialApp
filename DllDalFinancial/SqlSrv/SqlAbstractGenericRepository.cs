@@ -1,84 +1,92 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
+using DapperExtensions;
 using Newtonsoft.Json;
 using DllEntityLayer;
 
-namespace DllDalFinancial
+namespace DllDalFinancial;
+
+public abstract class SqlAbstractGenericRepository<T> where T : class, IEntityBase
 {
-    public abstract class SqlAbstractGenericRepository<T> where T : class, IEntityBase
+    private readonly IDbConnection _dbConnection;
+
+    public SqlAbstractGenericRepository(IDbConnection dbConnection)
     {
-        private readonly string _connectionString;
+        _dbConnection = dbConnection ?? throw new ArgumentNullException(nameof(dbConnection));
+    }
 
-        protected SqlAbstractGenericRepository(string connectionString)
+    public async Task<IEnumerable<T>> GetAllAsync()
+    {
+        return await _dbConnection.GetListAsync<T>();
+    }
+
+    public async Task<T> GetByIdAsync(int id)
+    {
+        return await _dbConnection.GetAsync<T>(id);
+    }
+
+    public async Task<int> InsertAsync(T entity)
+    {
+        return await _dbConnection.InsertAsync(entity);
+    }
+
+    public async Task<bool> UpdateAsync(T entity)
+    {
+        return await _dbConnection.UpdateAsync(entity);
+    }
+
+    public async Task<bool> DeleteAsync(T entity)
+    {
+        return await _dbConnection.DeleteAsync(entity);
+    }
+
+    public async Task<bool> CreateTableIfNotExists()
+    {
+        var tableName = typeof(T).Name;
+        var properties = typeof(T).GetProperties();
+
+        var columns = properties.Select(property =>
         {
-            _connectionString = connectionString;
+            var columnName = property.Name;
+            var sqlType = GetSqlType(property.PropertyType);
+            return $"{columnName} {sqlType}";
+        });
+
+        var columnsString = string.Join(", ", columns);
+
+        var sql = $"IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableName) " +
+                  $"BEGIN " +
+                  $"CREATE TABLE {tableName} ({columnsString}) " +
+                  $"END";
+
+        try
+        {
+            await _dbConnection.ExecuteAsync(sql, new { TableName = tableName });
+            return true;
         }
-
-        protected virtual string TableName => typeof(T).Name;
-
-        public async Task<int> CreateAsync(T entity)
+        catch (Exception ex)
         {
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var sql = $@"
-                INSERT INTO {TableName} (data) 
-                VALUES (@Data);
-                SELECT SCOPE_IDENTITY();";
-
-            var entityId = await db.ExecuteScalarAsync<int>(sql, new { Data = JsonConvert.SerializeObject(entity) });
-            entity.Id = entityId;
-            return entityId;
-        }
-
-        public async Task<T> GetAsync(int id)
-        {
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var sql = $@"
-                SELECT data
-                FROM {TableName}
-                WHERE Id = @Id";
-
-            var entityJson = await db.ExecuteScalarAsync<string>(sql, new { Id = id });
-            return entityJson != null ? JsonConvert.DeserializeObject<T>(entityJson) : null;
-        }
-
-        public async Task<IEnumerable<T>> GetAllAsync()
-        {
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var sql = $"SELECT data FROM {TableName}";
-            var entityJsons = await db.QueryAsync<string>(sql);
-            var entities = new List<T>();
-
-            foreach (var entityJson in entityJsons)
-            {
-                entities.Add(JsonConvert.DeserializeObject<T>(entityJson));
-            }
-
-            return entities;
-        }
-
-        public async Task UpdateAsync(int id, T entity)
-        {
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var sql = $@"
-                UPDATE {TableName}
-                SET data = @Data
-                WHERE Id = @Id";
-
-            await db.ExecuteAsync(sql, new { Id = id, Data = JsonConvert.SerializeObject(entity) });
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var sql = $@"
-                DELETE FROM {TableName}
-                WHERE Id = @Id";
-
-            await db.ExecuteAsync(sql, new { Id = id });
+            // Manejar el error de creación de tabla
+            Console.WriteLine($"Error al crear la tabla: {ex.Message}");
+            return false;
         }
     }
+
+    private string GetSqlType(Type propertyType)
+    {
+        // Mapea los tipos de propiedades de .NET a tipos de SQL
+        if (propertyType == typeof(int))
+            return "INT";
+        else if (propertyType == typeof(string))
+            return "NVARCHAR(MAX)";
+        // Añade más mapeos de tipos según sea necesario
+
+        throw new NotSupportedException($"Tipo de propiedad no compatible: {propertyType.Name}");
+    }
+
 }
+
+

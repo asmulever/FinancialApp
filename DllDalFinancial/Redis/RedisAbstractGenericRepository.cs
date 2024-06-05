@@ -17,7 +17,7 @@ public abstract class RedisAbstractGenericRepository<T> where T : class, IEntity
         _redis = ConnectionMultiplexer.Connect(connectionString);
         _database = _redis.GetDatabase();
     }
- protected virtual string GetKey(int id) => $"{typeof(T).Name.ToLower()}:{id}";
+    protected virtual string GetKey(int id) => $"{typeof(T).Name.ToLower()}:{id}";
 
     protected virtual string GetSetKey() => $"{typeof(T).Name.ToLower()}_ids";
 

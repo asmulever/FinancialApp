@@ -15,3 +15,4 @@
 /home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/ref/DllDal.dll
 /home/arielhs/repo/tstsolution/DllDalFinancial/bin/Debug/net8.0/DllDal.runtimeconfig.json
 /home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDal.genruntimeconfig.cache
+/home/arielhs/repo/tstsolution/DllDalFinancial/obj/Debug/net8.0/DllDal.sourcelink.json
