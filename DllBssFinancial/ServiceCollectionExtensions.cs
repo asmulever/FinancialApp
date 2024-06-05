@@ -3,8 +3,8 @@ using OtherDalAssembly;
 using DllBssFinancial;
 using DllEntityLayer;
 
-namespace OtherBssAssembly
-{
+namespace OtherBssAssembly;
+
     public static class ServiceCollectionExtensions
     {
         public static void AddBssAssemblyServices(this IServiceCollection services)
@@ -13,4 +13,3 @@ namespace OtherBssAssembly
             services.AddDalAssemblyServices();
         }
     }
-}

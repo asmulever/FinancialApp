@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using DllEntityLayer;
 
-namespace DllDalFinancial.Redis
+namespace DllDalFinancial
 {
     public interface IRedisAbstractGenericRepository<T> where T : class, IEntityBase
     {

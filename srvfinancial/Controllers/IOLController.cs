@@ -6,22 +6,22 @@ namespace srvfinancial.Controllers;
 
     [ApiController]
     [Route("[controller]")]
-    public class IOLController : ControllerBase
+    public class Controller : ControllerBase
     {
-        private readonly ILogger<IOLController> _logger;
-        private readonly IBssLayerIOL _BssLayerIOL;
-        public IOLController(ILogger<IOLController> logger,IBssLayerIOL BssLayerIOL)
+        private readonly ILogger<Controller> _logger;
+        private readonly IBssLayer _BssLayer;
+        public Controller(ILogger<Controller> logger,IBssLayer BssLayer)
         {
             _logger = logger;
-            _BssLayerIOL = BssLayerIOL;
+            _BssLayer = BssLayer;
         }
 
         //[HttpGet("/products2/{id}", Name = "Products_List")]
 
-        [HttpGet(Name = "GetIOLTicker/{tktname:string}")]
-        public ITickerBase Get(string tktname)
+        [HttpGet(Name = "GetTicker/{tktname:string}")]
+        public IEntityBase Get(string tktname)
         {
-            var tkt = _BssLayerIOL.getIol(tktname);
+            var tkt = _BssLayer.get(tktname);
             return tkt;
         }
 
