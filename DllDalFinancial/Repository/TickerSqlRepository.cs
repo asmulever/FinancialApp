@@ -6,7 +6,7 @@ using DllEntityLayer;
 
 namespace DllDalFinancial;
 
-public class TickerSqlRepository
+public class TickerSqlRepository: SqlAbstractGenericRepository<Ticker>, ISqlAbstractGenericRepository<Ticker>
 {
   public TickerSqlRepository(string connectionString) : base(connectionString)
     {

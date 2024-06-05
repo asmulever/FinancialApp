@@ -1,8 +1,4 @@
-﻿using StackExchange.Redis;
-using System.Text.Json;
-
-using DllDalFinancial;
-using DllEntityLayer;
+﻿using DllEntityLayer;
 
 namespace DllDalFinancial;
 
