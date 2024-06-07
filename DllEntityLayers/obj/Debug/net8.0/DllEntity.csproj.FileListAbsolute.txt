@@ -9,3 +9,4 @@
 /home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/refint/DllEntity.dll
 /home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntity.pdb
 /home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/ref/DllEntity.dll
+/home/arielhs/repo/tstsolution/DllEntityLayers/obj/Debug/net8.0/DllEntity.sourcelink.json

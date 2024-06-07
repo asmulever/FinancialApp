@@ -2,7 +2,6 @@ using NUnit.Framework;
 using Microsoft.Extensions.Configuration;
 
 using DllDalFinancial;
-using DllDalFinancial.Redis;
 using DllEntityLayer;
 
 namespace NUnitProj.Test;
