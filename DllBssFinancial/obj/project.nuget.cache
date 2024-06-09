@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EMNI8OuIDrUxL25UyrNrRfx5o2typFkmEoCX7jSHWgbNZq03jDPnPzy1e9ApkNY42KgFiLoJw4SDbgfPnAsR2A==",
+  "dgSpecHash": "QDh7i44K93Rbqu0+j6Fa73h7GUgIYtGKZXFzdUnhX6w4QAyFqw0LL1JVrVlJJPuq/z9Ktnx8ULnxOxZnDt9PTQ==",
   "success": true,
   "projectFilePath": "/home/arielhs/repo/tstsolution/DllBssFinancial/DllBss.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,8 @@
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.fileextensions/8.0.0/microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.json/8.0.0/microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
