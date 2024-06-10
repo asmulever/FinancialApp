@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DllBss")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+710f09cd8369b456f24514e7ac0e0b1fc060eb79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2887700609a4ece479a72d5b012b653b41c964fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DllBss")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DllBss")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
