@@ -1,18 +1,21 @@
 ﻿using NUnit.Framework;
 using Microsoft.Extensions.Configuration;
-using DllDalFinancial;
-using DllEntityLayer;
+
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
+using DllDalFinancial;
+using DllDalFinancial.Interfaces;
+using DllEntityLayer;
+
 namespace NUnitProj.Test
 {
     [TestFixture]
-    public class UnitSqlsrvTest
+    public class SqlServerTests
     {
-        private SqlAbstractGenericRepository<Ticker> _repository;
+        private IGenericCrudRepository<Ticker> _repository;
         private SqlConnection _connection;
 
         [SetUp]
@@ -48,10 +51,10 @@ namespace NUnitProj.Test
                 Categoria = 9
             };
 
-            await _repository.InsertAsync(ticker);
+            await _repository.Ins(ticker);
 
             // Act
-            var retrievedTicker = await _repository.GetByIdAsync(ticker.Id);
+            var retrievedTicker = await _repository.GetByID(ticker.Id);
 
             // Assert
             Assert.IsNotNull(retrievedTicker);
@@ -71,8 +74,8 @@ namespace NUnitProj.Test
             };
 
             // Act
-            await _repository.InsertAsync(ticker);
-            var retrievedTicker = await _repository.GetByIdAsync(ticker.Id);
+            await _repository.Ins(ticker);
+            var retrievedTicker = await _repository.GetByID(ticker.Id);
 
             // Assert
             Assert.IsNotNull(retrievedTicker);
@@ -102,11 +105,11 @@ namespace NUnitProj.Test
                 Categoria = 2
             };
 
-            await _repository.InsertAsync(ticker1);
-            await _repository.InsertAsync(ticker2);
+            await _repository.Ins(ticker1);
+            await _repository.Ins(ticker2);
 
             // Act
-            var allTickers = await _repository.GetAllAsync();
+            var allTickers = await _repository.GetAll();
 
             // Assert
             Assert.IsNotNull(allTickers);
@@ -125,13 +128,13 @@ namespace NUnitProj.Test
                 Categoria = 9
             };
 
-            await _repository.InsertAsync(ticker);
+            await _repository.Ins(ticker);
             ticker.tickerName = "UpdatedTicker";
             ticker.Price = 20.5M;
 
             // Act
-            var updateResult = await _repository.UpdateAsync(ticker);
-            var updatedTicker = await _repository.GetByIdAsync(ticker.Id);
+            var updateResult = await _repository.Upd(ticker.Id,ticker);
+            var updatedTicker = await _repository.GetByID(ticker.Id);
 
             // Assert
             Assert.IsTrue(updateResult);
@@ -152,11 +155,11 @@ namespace NUnitProj.Test
                 Categoria = 9
             };
 
-            await _repository.InsertAsync(ticker);
+            await _repository.Ins(ticker);
 
             // Act
-            var deleteResult = await _repository.DeleteAsync(ticker.Id);
-            var deletedTicker = await _repository.GetByIdAsync(ticker.Id);
+            var deleteResult = await _repository.Del(ticker.Id);
+            var deletedTicker = await _repository.GetByID(ticker.Id);
 
             // Assert
             Assert.IsTrue(deleteResult);
