@@ -46,7 +46,7 @@ public abstract class RedisCrudRepository<T> : IGenericCrudRepository<T> where T
 
         foreach (var id in ids)
         {
-            var key = GetKey((long)id);
+            var key = GetKey((int)id);
             var entityJson = await _database.HashGetAsync(key, "data");
             if (!entityJson.IsNull)
             {

@@ -9,6 +9,7 @@ namespace OtherDalAssembly;
     {
         public static void AddDalAssemblyServices(this IServiceCollection services)
         {
-            services.AddScoped<RedisAbstractGenericRepository<Ticker>, TickerRedisRepository>();
+            services.AddScoped<RedisCrudRepository<Ticker>, TickerRedisRepository>();
+            services.AddScoped<SqlCrudRepository<Ticker>, TickerSqlRepository>();
         }
     }

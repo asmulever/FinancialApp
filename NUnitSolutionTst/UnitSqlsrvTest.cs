@@ -33,7 +33,12 @@ namespace NUnitProj.Test
         [TearDown]
         public void TearDown()
         {
-            var cmd = new SqlCommand("DELETE FROM Ticker",_connection); // Limpieza de la tabla Ticker            
+            if (_connection.State != System.Data.ConnectionState.Open)
+            {
+                _connection.Open();
+            }
+            
+            var cmd = new SqlCommand("DELETE FROM Ticker", _connection); // Limpieza de la tabla Ticker            
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             _connection.Dispose();
@@ -133,7 +138,7 @@ namespace NUnitProj.Test
             ticker.Price = 20.5M;
 
             // Act
-            var updateResult = await _repository.Upd(ticker.Id,ticker);
+            var updateResult = await _repository.Upd(ticker.Id, ticker);
             var updatedTicker = await _repository.GetByID(ticker.Id);
 
             // Assert

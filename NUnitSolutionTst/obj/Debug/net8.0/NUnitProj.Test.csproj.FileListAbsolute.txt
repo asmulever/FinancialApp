@@ -1,10 +1,4 @@
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/CoverletSourceRootsMapping_NUnitProj.Test
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.csproj.AssemblyReference.cache
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.GeneratedMSBuildEditorConfig.editorconfig
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.AssemblyInfoInputs.cache
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.AssemblyInfo.cs
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.csproj.CoreCompileInputs.cache
-/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.sourcelink.json
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/nunit.engine.dll
@@ -159,6 +153,12 @@
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/DllEntity.dll
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/DllDal.pdb
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/bin/Debug/net8.0/DllEntity.pdb
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.csproj.AssemblyReference.cache
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.AssemblyInfoInputs.cache
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.AssemblyInfo.cs
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.csproj.CoreCompileInputs.cache
+/home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.sourcelink.json
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.csproj.CopyComplete
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/NUnitProj.Test.dll
 /home/arielhs/repo/tstsolution/NUnitSolutionTst/obj/Debug/net8.0/refint/NUnitProj.Test.dll
