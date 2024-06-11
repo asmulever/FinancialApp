@@ -2,10 +2,9 @@
 
 namespace DllDalFinancial;
 
-public class TickerRedisRepository : RedisAbstractGenericRepository<Ticker>, IRedisAbstractGenericRepository<Ticker>
+public class TickerRedisRepository : RedisCrudRepository<Ticker>
 {   
    public TickerRedisRepository(string connectionString) : base(connectionString)
     {
-    }  
- 
+    }   
 }

@@ -2,13 +2,15 @@ using NUnit.Framework;
 using Microsoft.Extensions.Configuration;
 
 using DllDalFinancial;
+using DllDalFinancial.Interfaces;
 using DllEntityLayer;
 
 namespace NUnitProj.Test;
 
+ [TestFixture]
 public class RedisTests
 {
-    private IRedisAbstractGenericRepository<Ticker> _repository;
+    private IGenericCrudRepository<Ticker> _repository;
 
     [SetUp]
     public void Setup()
@@ -29,7 +31,7 @@ public class RedisTests
         int tickerId = 2;
 
         // Act
-        var ticker = _repository.GetAsync(tickerId).Result;
+        var ticker = _repository.GetByID(tickerId).Result;
 
         // Assert
         Assert.IsNotNull(ticker);
@@ -56,9 +58,9 @@ public class RedisTests
         };
 
         // Act
-        await _repository.CreateAsync(ticker);
-        await _repository.CreateAsync(ticker1);
-        var retrievedTicker = await _repository.GetAsync(ticker.Id);
+        await _repository.Ins(ticker);
+        await _repository.Ins(ticker1);
+        var retrievedTicker = await _repository.GetByID(ticker.Id);
 
         // Assert
         Assert.IsNotNull(retrievedTicker);

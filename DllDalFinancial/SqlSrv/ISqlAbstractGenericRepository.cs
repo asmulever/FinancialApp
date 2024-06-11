@@ -4,14 +4,14 @@ using DllEntityLayer;
 
 namespace DllDalFinancial
 {
-    public interface ISqlAbstractGenericRepository<T> where T : class, IEntityBase
+    public interface ISqlAbstractGenericRepository<T> where T : class, IEntityBase 
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T> GetByIdAsync(int id);
-        Task<int> InsertAsync(T entity);
-        Task<bool> UpdateAsync(T entity);
-        Task<bool> DeleteAsync(T entity);
-        Task<bool> CreateTableIfNotExists();
+        //Task<IEnumerable<T>> GetAllAsync();
+        //Task<T> GetByIdAsync(long? id);
+        //Task<T> InsertAsync<T>(T entity);
+        //Task<bool> UpdateAsync(T entity);
+        //Task<bool> DeleteAsync(long? id);
+        //Task<bool> CreateTableIfNotExists();
     }
 }
 

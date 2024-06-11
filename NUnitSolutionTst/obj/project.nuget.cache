@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QzUM/jNjElx3+lKQoEMnZWH+enYGMN6q5iKc9AGX9OHb+X90fVlwhmmbDda+VbDvQsCyrNwJB3wVY+kXktBgvw==",
+  "dgSpecHash": "hJ3gyqtnrzjQNSwNYXfvJ1b32ZYNDFn5KRBzeKJM6iNhirAbHQHRy9yBMNH5t6A8EFfVuxg1y6FLI9gQF8cv5Q==",
   "success": true,
   "projectFilePath": "/home/arielhs/repo/tstsolution/NUnitSolutionTst/NUnitProj.Test.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,8 @@
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.fileextensions/8.0.0/microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.json/8.0.0/microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",

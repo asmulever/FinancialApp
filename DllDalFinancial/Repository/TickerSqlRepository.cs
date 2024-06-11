@@ -1,10 +1,11 @@
-﻿using DllEntityLayer;
+﻿using System.Data;
+using DllEntityLayer;
 
 namespace DllDalFinancial;
 
 public class TickerSqlRepository: SqlAbstractGenericRepository<Ticker>, ISqlAbstractGenericRepository<Ticker>
 {
-  public TickerSqlRepository(string connectionString) : base(connectionString)
+  public TickerSqlRepository(IDbConnection dbConnection) : base(dbConnection)
     {
     }  
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "13LEZHhwHPUOzSctjXXgHKeORlds5w+tnOSaRGiMHBsD1xY1lLEFX09JLTirKjpYECzUimRjT+Ao0EZ6WdiV3Q==",
+  "dgSpecHash": "hDnXznMHq+De3LkHl2GoW229LFm8lBbZNzYuAhyTzjJlqLc2i8Mzx+vqDqxXN1RizwCLj+Gchrv16Dxuwfmr9w==",
   "success": true,
   "projectFilePath": "/home/arielhs/repo/tstsolution/srvfinancial/srvfinancial.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,8 @@
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.fileextensions/8.0.0/microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.configuration.json/8.0.0/microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/arielhs/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "/home/arielhs/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
