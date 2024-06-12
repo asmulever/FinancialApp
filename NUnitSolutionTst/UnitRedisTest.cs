@@ -20,7 +20,11 @@ public class RedisTests
             .Build();
 
         var redisConnectionString = configuration.GetConnectionString("RedisConnection");
+
+#pragma warning disable CS8604 // Possible null reference argument.
         _repository = new TickerRedisRepository(redisConnectionString);
+#pragma warning restore CS8604 // Possible null reference argument.
+
 
     }
 
@@ -35,7 +39,7 @@ public class RedisTests
 
         // Assert
         Assert.IsNotNull(ticker);
-        Assert.AreEqual(tickerId, ticker.Id);
+        Assert.That(ticker.Id, Is.EqualTo(tickerId));
     }
 
     [Test]
@@ -64,7 +68,7 @@ public class RedisTests
 
         // Assert
         Assert.IsNotNull(retrievedTicker);
-        Assert.AreEqual(ticker.Id, retrievedTicker.Id);
+        Assert.That(retrievedTicker.Id, Is.EqualTo(ticker.Id));
 
     }
 

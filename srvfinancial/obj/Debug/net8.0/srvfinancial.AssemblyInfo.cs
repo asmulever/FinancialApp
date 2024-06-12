@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("srvfinancial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb3e795a980d96c541efb1623c0732c3710314b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea5aa29401740762f074840681af589fb973d7b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("srvfinancial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("srvfinancial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

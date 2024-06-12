@@ -36,7 +36,9 @@ public abstract class RedisCrudRepository<T> : IGenericCrudRepository<T> where T
         var key = GetKey(id);
         var entityJson = await _database.HashGetAsync(key, "data");
 
+#pragma warning disable CS8604 // Possible null reference argument.
         return entityJson.IsNull ? null : JsonConvert.DeserializeObject<T>(entityJson);
+#pragma warning restore CS8604 // Possible null reference argument.
     }
 
     public virtual async Task<IEnumerable<T>> GetAll()
@@ -50,7 +52,9 @@ public abstract class RedisCrudRepository<T> : IGenericCrudRepository<T> where T
             var entityJson = await _database.HashGetAsync(key, "data");
             if (!entityJson.IsNull)
             {
+#pragma warning disable CS8604 // Possible null reference argument.
                 entities.Add(JsonConvert.DeserializeObject<T>(entityJson));
+#pragma warning restore CS8604 // Possible null reference argument.
             }
         }
 
