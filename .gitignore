@@ -1,0 +1,22 @@
+# Archivos sensibles
+.env
+*.key
+*.pem
+config/config.php
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias y entornos
+/vendor/
+/node_modules/
+/venv/
+/__pycache__/
+
+# Archivos temporales
+*.log
+*.tmp
+*.cache
+.idea/
+.vscode/
